@@ -31,7 +31,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 
 <p>
-Part 1: Create our Resources
+<h3>Part 1: Create our Resources</h3>
 
 To begin, we need to create the necessary resources in Microsft Azure. Start by creating a Resource Group, which will serve as a logical container for our virtual machines and other associated resources.
 
@@ -47,11 +47,9 @@ Similarly, create a Linux (Ubuntu) VM and select the previously created Resource
 Finally, observe your Virtual Network within Network Watcher to verify the network configuration.
 
 </p>
-<br />
-
 
 <p>
-Part 2: Observe ICMP Traffic
+<h3>Part 2: Observe ICMP Traffic</h3>
 
 In this part, we will focus on observing ICMP (Internet Control Message Protocol) traffic using Wireshark.
 
@@ -91,10 +89,10 @@ Then, re-enable ICMP traffic for the Network Security Group of the Ubuntu VM and
 Finally, stop the ping activity to conclude this part.
 
 </p>
-<br />
+
 
 <p>
-Part 3: Observe SSH, DHCP, DNS, and RDP Traffic
+<h3>Part 3: Observe SSH, DHCP, DNS, and RDP Traffic</h3>
 
 Now we will explore the traffic related to SSH, DHCP, DNS, and RDP protocols.
 
@@ -114,7 +112,6 @@ Press Enter to initiate the SSH connection. Observe the SSH traffic in Wireshark
 ![Resources Image](projectpics/ssh.jpeg)
 </p>
 
-(Try the rest on your own, steps attached) <br/>
 
 2.DHCP Traffic: Open the command line or terminal on your Windows 10 VM. Type the command ipconfig /renew and press Enter to issue a DHCP request and attempt to obtain a new IP address. Observe the DHCP traffic appearing in Wireshark.
 
@@ -123,11 +120,10 @@ Press Enter to initiate the SSH connection. Observe the SSH traffic in Wireshark
 4.RDP Traffic: Apply the filter tcp.port == 3389 in Wireshark to display RDP (Remote Desktop Protocol) traffic. Observe the continuous stream of traffic and consider why RDP traffic appears to be non-stop spamming.
   
 </p>
-<br />
 
 
 <p>
-Cleanup
+<h3>Cleanup</h3>
 
 After completing all the instructions, make sure to perform the necessary cleanup steps:
 
@@ -146,6 +142,7 @@ After completing all the instructions, make sure to perform the necessary cleanu
 </p>
 
 By following these instructions, you will have successfully completed this project and gained valuable experience in observing network traffic using Wireshark.
+
 
 </p>
 <br />
